@@ -20,3 +20,11 @@ contract Base is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableUpgrad
     // functions as we need to explicityly say how we want to authorize upgrades 
     function _authorizeUpgrade(address) internal override onlyOwner {}
 }
+
+// To make a v2 of our contract we extend v2. This gives us all the functionailty of v1
+// but with the ability to add new functions
+contract BaseV2 is Base {
+    function version() public pure returns (string memory) {
+        return "v2";
+    }
+}
