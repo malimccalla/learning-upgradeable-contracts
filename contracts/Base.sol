@@ -7,9 +7,11 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 contract Base is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableUpgradeable {
+    string public title;
+    string public gamer;
     // Constructor functions can not be used in upgradeable contracts
     // Instead we can use an initialize functions with the initalizer modifier
-    function initialize() public initializer {
+    function initialize(string memory _title) public initializer {
         // As this is not a standard contrctor function we can use this funny syntax
         // to pass the arguments to what would have been our ERC20("Base", "BASE") constructor syntax
         __ERC20_init("Base", "BASE");
@@ -18,6 +20,8 @@ contract Base is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableUpgrad
         // Without this the owner variable would not be initalized and the upgrade function
         // Would not be able to run as _authorizeUpgrade requires onlyOwner
         __Ownable_init();
+
+        title = _title;
 
         _mint(msg.sender, 10000000 * 10 ** decimals());
     } 
