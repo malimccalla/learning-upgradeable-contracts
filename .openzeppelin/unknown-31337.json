@@ -7,13 +7,18 @@
   "proxies": [
     {
       "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-      "txHash": "0x61c8c3534867aba39ab3902d4f4fa269bc277abaf9c33e9e99f774ad8e7f1412",
+      "txHash": "0xeccc69485b741167282951cc2f3979be2c6496a2f0401d7cd374c84972fd4914",
       "kind": "uups"
     },
     {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0xe0470a0c411df336ba72286966a55658e76fd57bd28f153fa9aaa8e0ebf74da6",
-      "kind": "uups"
+      "txHash": "0xe88509d703395fe1ad1bb01e4f9ad83b9cc7db7d635e0671d830063112d8ace8",
+      "kind": "beacon"
+    },
+    {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0xa224cdda92af1f43a6cd04ac49c72d8ef0f5b940d61151d60cc438b43e47bd6c",
+      "kind": "beacon"
     }
   ],
   "impls": {
@@ -175,175 +180,9 @@
         }
       }
     },
-    "c0fb08d7331e83bb0a4cc65120cf07dfd50b292bdd08d047237e8f6830c3ef0a": {
-      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
-      "txHash": "0x582f18588fc0c694315baeba660d61c1cccd1229d02e58f00fc12db1389be7aa",
-      "layout": {
-        "storage": [
-          {
-            "label": "_initialized",
-            "offset": 0,
-            "slot": "0",
-            "type": "t_bool",
-            "contract": "Initializable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
-          },
-          {
-            "label": "_initializing",
-            "offset": 1,
-            "slot": "0",
-            "type": "t_bool",
-            "contract": "Initializable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
-          },
-          {
-            "label": "__gap",
-            "offset": 0,
-            "slot": "1",
-            "type": "t_array(t_uint256)50_storage",
-            "contract": "ContextUpgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
-          },
-          {
-            "label": "_balances",
-            "offset": 0,
-            "slot": "51",
-            "type": "t_mapping(t_address,t_uint256)",
-            "contract": "ERC20Upgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
-          },
-          {
-            "label": "_allowances",
-            "offset": 0,
-            "slot": "52",
-            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "contract": "ERC20Upgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
-          },
-          {
-            "label": "_totalSupply",
-            "offset": 0,
-            "slot": "53",
-            "type": "t_uint256",
-            "contract": "ERC20Upgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
-          },
-          {
-            "label": "_name",
-            "offset": 0,
-            "slot": "54",
-            "type": "t_string_storage",
-            "contract": "ERC20Upgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
-          },
-          {
-            "label": "_symbol",
-            "offset": 0,
-            "slot": "55",
-            "type": "t_string_storage",
-            "contract": "ERC20Upgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
-          },
-          {
-            "label": "__gap",
-            "offset": 0,
-            "slot": "56",
-            "type": "t_array(t_uint256)45_storage",
-            "contract": "ERC20Upgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
-          },
-          {
-            "label": "__gap",
-            "offset": 0,
-            "slot": "101",
-            "type": "t_array(t_uint256)50_storage",
-            "contract": "ERC1967UpgradeUpgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
-          },
-          {
-            "label": "__gap",
-            "offset": 0,
-            "slot": "151",
-            "type": "t_array(t_uint256)50_storage",
-            "contract": "UUPSUpgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
-          },
-          {
-            "label": "_owner",
-            "offset": 0,
-            "slot": "201",
-            "type": "t_address",
-            "contract": "OwnableUpgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
-          },
-          {
-            "label": "__gap",
-            "offset": 0,
-            "slot": "202",
-            "type": "t_array(t_uint256)49_storage",
-            "contract": "OwnableUpgradeable",
-            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
-          },
-          {
-            "label": "fee",
-            "offset": 0,
-            "slot": "251",
-            "type": "t_uint256",
-            "contract": "BaseV2",
-            "src": "contracts/Base.sol:33"
-          },
-          {
-            "label": "tax",
-            "offset": 0,
-            "slot": "252",
-            "type": "t_uint256",
-            "contract": "BaseV3",
-            "src": "contracts/Base.sol:44"
-          }
-        ],
-        "types": {
-          "t_address": {
-            "label": "address",
-            "numberOfBytes": "20"
-          },
-          "t_array(t_uint256)45_storage": {
-            "label": "uint256[45]",
-            "numberOfBytes": "1440"
-          },
-          "t_array(t_uint256)49_storage": {
-            "label": "uint256[49]",
-            "numberOfBytes": "1568"
-          },
-          "t_array(t_uint256)50_storage": {
-            "label": "uint256[50]",
-            "numberOfBytes": "1600"
-          },
-          "t_bool": {
-            "label": "bool",
-            "numberOfBytes": "1"
-          },
-          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
-            "label": "mapping(address => mapping(address => uint256))",
-            "numberOfBytes": "32"
-          },
-          "t_mapping(t_address,t_uint256)": {
-            "label": "mapping(address => uint256)",
-            "numberOfBytes": "32"
-          },
-          "t_string_storage": {
-            "label": "string",
-            "numberOfBytes": "32"
-          },
-          "t_uint256": {
-            "label": "uint256",
-            "numberOfBytes": "32"
-          }
-        }
-      }
-    },
-    "57fd12e5372d2eda2ffbb52a3ef08ca388e8a33aa7c790f735ee2217dc8ffcea": {
+    "906314c1119b106f6eb3bca178700c551b7270c1dd432d72e1171a312347c1b4": {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "txHash": "0x93938f3cd77678870405f392acb45b64b514ff781b866d3c05ef3f2b818223cf",
+      "txHash": "0xa2d4f2583dc480a26f9ef6a42ef31f4ca0790988214cd85c2138cf5ea552dcca",
       "layout": {
         "storage": [
           {
@@ -456,15 +295,7 @@
             "slot": "251",
             "type": "t_string_storage",
             "contract": "Base",
-            "src": "contracts/Base.sol:10"
-          },
-          {
-            "label": "gamer",
-            "offset": 0,
-            "slot": "252",
-            "type": "t_string_storage",
-            "contract": "Base",
-            "src": "contracts/Base.sol:11"
+            "src": "contracts/Base.sol:12"
           }
         ],
         "types": {
@@ -507,9 +338,9 @@
         }
       }
     },
-    "1436ef36763f37944ed7401b8229176dd36d2075811d260f8ba2480b99119652": {
-      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
-      "txHash": "0x8aeb0f3201909bded76358b76338485c6792970cb68ef08a403cfbc726df3a5a",
+    "72d0ac562e9e1b630a3db50dbae276e57030bb09cc6441cf43b263ac4742e19a": {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x8806fb04f86ccee1678f398f71bcc638803f51f9e070eb02f0813b1632981326",
       "layout": {
         "storage": [
           {
@@ -622,23 +453,15 @@
             "slot": "251",
             "type": "t_string_storage",
             "contract": "Base",
-            "src": "contracts/Base.sol:10"
-          },
-          {
-            "label": "gamer",
-            "offset": 0,
-            "slot": "252",
-            "type": "t_string_storage",
-            "contract": "Base",
-            "src": "contracts/Base.sol:11"
+            "src": "contracts/Base.sol:12"
           },
           {
             "label": "fee",
             "offset": 0,
-            "slot": "253",
+            "slot": "252",
             "type": "t_uint256",
             "contract": "BaseV2",
-            "src": "contracts/Base.sol:37"
+            "src": "contracts/Base.sol:38"
           }
         ],
         "types": {
@@ -681,9 +504,9 @@
         }
       }
     },
-    "72c07a86a3e8e4f2bf579ff2372be3520fd365b04d46d7d9acd194c8984bd6a0": {
+    "7ac4ade0a9cec7ebed888c6bb86a8f58ce6212950cef11511981e38fdc6e8800": {
       "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
-      "txHash": "0xa08f5c4373f5446069aea8ae18bb16c312b135b5e2fa95dc7cf50c0b5cefd0fd",
+      "txHash": "0xfe4c8bc2a21ad8b332f4b2cd86e9d0092f433a156c35b804de9a4ff4de4d507b",
       "layout": {
         "storage": [
           {
@@ -796,31 +619,23 @@
             "slot": "251",
             "type": "t_string_storage",
             "contract": "Base",
-            "src": "contracts/Base.sol:10"
-          },
-          {
-            "label": "gamer",
-            "offset": 0,
-            "slot": "252",
-            "type": "t_string_storage",
-            "contract": "Base",
-            "src": "contracts/Base.sol:11"
+            "src": "contracts/Base.sol:12"
           },
           {
             "label": "fee",
             "offset": 0,
-            "slot": "253",
+            "slot": "252",
             "type": "t_uint256",
             "contract": "BaseV2",
-            "src": "contracts/Base.sol:37"
+            "src": "contracts/Base.sol:38"
           },
           {
             "label": "tax",
             "offset": 0,
-            "slot": "254",
+            "slot": "253",
             "type": "t_uint256",
             "contract": "BaseV3",
-            "src": "contracts/Base.sol:48"
+            "src": "contracts/Base.sol:49"
           }
         ],
         "types": {

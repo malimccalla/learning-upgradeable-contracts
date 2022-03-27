@@ -5,10 +5,11 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol";
+import "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol";
 
 contract Base is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableUpgradeable {
     string public title;
-    string public gamer;
     // Constructor functions can not be used in upgradeable contracts
     // Instead we can use an initialize functions with the initalizer modifier
     function initialize(string memory _title) public initializer {
